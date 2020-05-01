@@ -155,7 +155,7 @@ def create_generators(args):
         if args.evaluation:
             validation_generator = CocoGenerator(
                 args.coco_path,
-                'val2017',
+                'train2017',
                 batch_size=args.batch_size,
                 config=args.config
             )
